@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-        
+      
+      
+<!--namespace부분은 @Mapper와 매핑시키기 위한 경로를 기입하는 부분-->        
 <mapper namespace="com.example.demo.repository.MemberRepository">
 
-<select id="getAllMember" resultType="MemberVo">
-
-select user_no, user_nm, user_id from MEMBER_INFO
+<select id="getMemberList" resultType="Member">
+ select user_no, user_nm, user_id from member_info
 </select>
-
-
-
 </mapper> 

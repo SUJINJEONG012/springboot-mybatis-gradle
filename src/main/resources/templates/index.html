@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="ko" xmlns:th="http://thymeleaf.org">
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<table>
+<thead>
+<tr>
+<th>유저번호</th>
+<th>유저이름</th>
+<th>유저아이디</th>
+</tr>
+</thead>
+<tbody>
+<tr th:each="member : ${memberList}">
+<td><span th:text="${member.user_no}"></span></td>
+<td><span th:text="${member.user_nm}"></span></td>
+<td><span th:text="${member.user_id}"></span></td>
+</tr>
+</tbody>
+
+</table>
+</body>
+</html>

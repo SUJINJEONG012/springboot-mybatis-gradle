@@ -1,8 +1,8 @@
 package com.example.demo.vo;
 
-import lombok.Data;
+import lombok.Getter;
 
-@Data
+@Getter
 public class MemberVo {
 
 	private String user_no;

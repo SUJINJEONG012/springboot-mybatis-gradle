@@ -4,10 +4,9 @@ import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
 
-import com.example.demo.vo.MemberVo;
+import com.example.demo.model.Member;
 
 @Mapper
 public interface MemberRepository {
-	List<MemberVo> getAllMember();
-	
+	List<Member> getMemberList();
 }
